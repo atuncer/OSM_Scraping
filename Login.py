@@ -1,6 +1,6 @@
-import time
 import pickle
 from selenium import webdriver
+from selenium.common import exceptions
 from selenium.webdriver.chrome.options import Options
 import sqlite3
 
@@ -20,7 +20,7 @@ url = 'https://en.onlinesoccermanager.com/'
 
 driver.get(url)
 
-
+print("asd")
 #
 # cookies = pickle.load(open("cookies2.pkl", "rb"))
 # for cookie in cookies:
@@ -30,6 +30,13 @@ driver.get(url)
 # driver.get(url)
 #
 #
-time.sleep(20)
+
+while True:
+    try:
+        driver.get_window_size()
+    except exceptions.WebDriverException:
+        break
+
 pickle.dump( driver.get_cookies() , open("cookie.pkl","wb"))
+print("Completed")
 
