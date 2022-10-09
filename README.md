@@ -1,5 +1,5 @@
 # OSM Scraping
-Basic scripts for scraping player datas from Online Soccer Manager
+Basic scripts for scraping player data from Online Soccer Manager
 
 ## How To Install?
 Only pip dependency is the Selenium package. It can be installed by:
@@ -11,7 +11,7 @@ or
 pip install -r requirements.txt
 ```
 Other dependency is the ChromeDriver. It can be downloaded from https://chromedriver.chromium.org/downloads. </br>
-This project is developped using [version 91.0.4472.19](https://chromedriver.storage.googleapis.com/index.html?path=91.0.4472.19/) </br> </br>
+This project is developed using [version 91.0.4472.19](https://chromedriver.storage.googleapis.com/index.html?path=91.0.4472.19/) </br> </br>
 Download the file and copy it into the project's directory. <b>Do not rename the file.</b> If you are on Linux or OS X, change <i>chromedriver.exe</i> to <i>chromedriver</i> in both scripts.
 </br>
 After setting up the environment, run the Login script. If a chrome window is opened and you can view the OSM's webpage, you have set up your environment correctly </br>
